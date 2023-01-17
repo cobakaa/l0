@@ -1,0 +1,89 @@
+
+{
+"order_uid": "63c6dfa0c58c8c541fd545c1",
+"track_number": "d43bf951-c797-47e8-8c5a-57e75d0a477e",
+"entry": "WEBIOTIC",
+"delivery": {
+"name": "Whitfield Burch",
+"phone": "+7 (971) 432-3642",
+"zip": "2639809",
+"city": "Bendon",
+"address": "Harman Street",
+"region": "Kentucky",
+"email": "whitfieldburch@webiotic.com"
+},
+"payment": {
+"transaction": "63c6dfa09e4a185b6f0c2ca0",
+"request_id": "",
+"currency": "USD",
+"provider": "wbpay",
+"amount": 3163,
+"payment_dt": 96216,
+"bank": "rodeomad",
+"delivery_cost": 1407,
+"goods_total": 973,
+"custom_fee": 0
+},
+"items": [
+{
+"chrt_id": 90794,
+"track_number": "cc8d4f7d-d890-43fc-b5c2-2a2da5542300",
+"price": 1248,
+"rid": "52fd0ab1-e824-4fa2-98fc-444a5a6ebd74",
+"name": "Viocular",
+"sale": 38,
+"size": "0",
+"total_price": 2223,
+"nm_id": 71711,
+"brand": "Mable",
+"status": 202
+},
+{
+"chrt_id": 55107,
+"track_number": "e86ea959-0b9e-410a-bc8d-2c9a4ba7824a",
+"price": 1667,
+"rid": "de03f860-b1dd-4b89-8eb3-dbedff458b65",
+"name": "Digirang",
+"sale": 55,
+"size": "0",
+"total_price": 2794,
+"nm_id": 76149,
+"brand": "Juliet",
+"status": 202
+},
+{
+"chrt_id": 84078,
+"track_number": "6f697b2c-4569-4442-99cc-c5f28ac014fc",
+"price": 233,
+"rid": "3e9a92f5-4e3b-4f30-9b86-2456b655fb78",
+"name": "Earthwax",
+"sale": 48,
+"size": "0",
+"total_price": 2278,
+"nm_id": 43135,
+"brand": "Washington",
+"status": 202
+},
+{
+"chrt_id": 26345,
+"track_number": "bb96c217-cb3d-472f-840e-3c966d649679",
+"price": 620,
+"rid": "713eb3db-35a0-4b47-843f-b61f2846ba37",
+"name": "Parcoe",
+"sale": 39,
+"size": "0",
+"total_price": 2300,
+"nm_id": 67205,
+"brand": "Chandler",
+"status": 202
+}
+],
+"locale": "en",
+"internal_signature": "",
+"customer_id": "test",
+"delivery_service": "meest",
+"shardkey": "9",
+"sm_id": 99,
+"date_created": "2009-05-12T12:28:44",
+"oof_shard": "1"
+}

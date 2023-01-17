@@ -1,0 +1,115 @@
+<html lang="ru" class="h-100">
+<head>
+    <title>Orders by id</title>
+    <style>
+        .send {
+            margin-top: 2%;
+            margin-left: 42%;
+        }
+        .delivery {
+            line-height: 10px;
+        }
+        .payment {
+            line-height: 10px;
+        }
+        .order {
+            line-height: 10px;
+        }
+        .items {
+            line-height: 10px;
+        }
+        table {
+            margin-top: 30px;
+            /*width: 600px;*/
+        }
+        #it td {
+            display:inline-block;
+        }
+        TD, TH {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="send">
+        <p style="font-size: 28px;"> <b>Enter order id (1..{{.DbSize}}):</b> </p>
+        <form method="post">
+            <input type="text" name="orderId"/>
+            <input type="submit"/>
+        </form>
+    </div>
+    {{if .Err}}
+    <div>
+        <p style="font-size: 28px; margin-left: 42%;"> <b>There are no rows with id = {{.Id}}</b> </p>
+    </div>
+    {{end}}
+    {{if .Order}}
+    <p style="font-size: 28px; margin-left: 42%;"> <b>Order id: {{.Id}}</b> </p>
+    <table>
+        <tr>
+            <th><p style="font-size: 20px;"> <b>Order</b> </p> </th>
+            <th><p style="font-size: 20px;"> <b>Delivery</b> </p> </th>
+            <th><p style="font-size: 20px;"> <b>Payment</b> </p> </th>
+        </tr>
+        <tr>
+            <td class="order">
+                <p style="font-size: 20px;"> OrderUid: {{.Order.OrderUid}} </p>
+                <p style="font-size: 20px;"> TrackNumber: {{.Order.TrackNumber}} </p>
+                <p style="font-size: 20px;"> Entry: {{.Order.Entry}} </p>
+                <p style="font-size: 20px;"> Locale: {{.Order.Locale}} </p>
+                <p style="font-size: 20px;"> InternalSignature: {{.Order.InternalSignature}} </p>
+                <p style="font-size: 20px;"> CustomerId: {{.Order.CustomerId}} </p>
+                <p style="font-size: 20px;"> DeliveryService: {{.Order.DeliveryService}} </p>
+                <p style="font-size: 20px;"> Shardkey: {{.Order.Shardkey}} </p>
+                <p style="font-size: 20px;"> SmId: {{.Order.SmId}} </p>
+                <p style="font-size: 20px;"> DateCreated: {{.Order.DateCreated}} </p>
+                <p style="font-size: 20px;"> OofShard: {{.Order.OofShard}} </p>
+            </td>
+            <td class="delivery">
+                <p style="font-size: 20px;"> Name: {{.Order.Delivery.Name}} </p>
+                <p style="font-size: 20px;"> Phone: {{.Order.Delivery.Phone}} </p>
+                <p style="font-size: 20px;"> Zip: {{.Order.Delivery.Zip}} </p>
+                <p style="font-size: 20px;"> City: {{.Order.Delivery.City}} </p>
+                <p style="font-size: 20px;"> Address: {{.Order.Delivery.Address}} </p>
+                <p style="font-size: 20px;"> Region: {{.Order.Delivery.Region}} </p>
+                <p style="font-size: 20px;"> Email: {{.Order.Delivery.Email}} </p>
+            </td>
+            <td class="payment">
+                <p style="font-size: 20px;"> Transaction: {{.Order.Payment.Transaction}} </p>
+                <p style="font-size: 20px;"> RequestId: {{.Order.Payment.RequestId}} </p>
+                <p style="font-size: 20px;"> Currency: {{.Order.Payment.Currency}} </p>
+                <p style="font-size: 20px;"> Provider: {{.Order.Payment.Provider}} </p>
+                <p style="font-size: 20px;"> Amount: {{.Order.Payment.Amount}} </p>
+                <p style="font-size: 20px;"> PaymentDt: {{.Order.Payment.PaymentDt}} </p>
+                <p style="font-size: 20px;"> Bank: {{.Order.Payment.Bank}} </p>
+                <p style="font-size: 20px;"> DeliveryCost: {{.Order.Payment.DeliveryCost}} </p>
+                <p style="font-size: 20px;"> GoodsTotal: {{.Order.Payment.GoodsTotal}} </p>
+                <p style="font-size: 20px;"> CustomFee: {{.Order.Payment.CustomFee}} </p>
+            </td>
+        </tr>
+    </table>
+
+    <table id="it">
+        {{range $i, $v := .Order.Items}}
+        <tr>
+            <th><p style="font-size: 20px;"> <b>Item {{(inc $i)}}</b> </p> </th>
+            <td class="items">
+            <p style="font-size: 20px;"> ChrtId: {{.ChrtId}} </p>
+            <p style="font-size: 20px;"> TrackNumber: {{.TrackNumber}} </p>
+            <p style="font-size: 20px;"> Price: {{.Price}} </p>
+            <p style="font-size: 20px;"> Rid: {{.Rid}} </p>
+            <p style="font-size: 20px;"> Name: {{.Name}} </p>
+            <p style="font-size: 20px;"> Sale: {{.Sale}} </p>
+            <p style="font-size: 20px;"> Size: {{.Size}} </p>
+            <p style="font-size: 20px;"> TotalPrice: {{.TotalPrice}} </p>
+            <p style="font-size: 20px;"> NmId: {{.NmId}} </p>
+            <p style="font-size: 20px;"> Brand: {{.Brand}} </p>
+            <p style="font-size: 20px;"> Status: {{.Status}} </p>
+            </td>
+        </tr>
+        {{end}}
+    </table>
+    {{end}}
+</body>
+</html>

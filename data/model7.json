@@ -1,0 +1,22 @@
+{
+  "order_uid": "63c6dfa0337b1d25aa31d7ad",
+  "track_number": "bebbe4c7-9065-4d51-99fd-585e542a2e21",
+  "entry": "MEDMEX",
+  "delivery": {
+    "name": "Cathryn Huff",
+    "phone": "+7 (935) 556-3915",
+    "zip": 2639809,
+    "city": "Esmont",
+    "address": "Franklin Street",
+    "region": "Connecticut",
+    "email": "cathrynhuff@medmex.com"
+  },
+  "locale": "en",
+  "internal_signature": "",
+  "customer_id": "test",
+  "delivery_service": "meest",
+  "shardkey": 9,
+  "sm_id": 99,
+  "date_created": "1993-05-14T08:32:16",
+  "oof_shard": 1
+}

@@ -1,0 +1,101 @@
+{
+  "order_uid": "63c6dfa0337b1d25aa31d7ad",
+  "track_number": "bebbe4c7-9065-4d51-99fd-585e542a2e21",
+  "entry": "MEDMEX",
+  "delivery": {
+    "name": "Cathryn Huff",
+    "phone": "+7 (935) 556-3915",
+    "zip": "2639809",
+    "city": "Esmont",
+    "address": "Franklin Street",
+    "region": "Connecticut",
+    "email": "cathrynhuff@medmex.com"
+  },
+  "payment": {
+    "transaction": "63c6dfa01683bd341baea6de",
+    "request_id": "",
+    "currency": "USD",
+    "provider": "wbpay",
+    "amount": 1042,
+    "payment_dt": 96146,
+    "bank": "skybold",
+    "delivery_cost": 1560,
+    "goods_total": 322,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 60484,
+      "track_number": "5b50b683-9171-4a1b-858a-a85db0776b09",
+      "price": 764,
+      "rid": "d65f111b-3183-4acf-875c-8cc675cb04ce",
+      "name": "Ecolight",
+      "sale": 98,
+      "size": "0",
+      "total_price": 3727,
+      "nm_id": 53315,
+      "brand": "Mollie",
+      "status": 202
+    },
+    {
+      "chrt_id": 28436,
+      "track_number": "7ff8f12e-8da4-450b-a739-b5e1b2573884",
+      "price": 1489,
+      "rid": "f1adb1d9-3471-4cbd-9c07-feb6f5516f4d",
+      "name": "Artworlds",
+      "sale": 64,
+      "size": "0",
+      "total_price": 1613,
+      "nm_id": 95076,
+      "brand": "Lee",
+      "status": 202
+    },
+    {
+      "chrt_id": 17036,
+      "track_number": "f258efa2-4673-4c1a-86c4-69b920149323",
+      "price": 1771,
+      "rid": "ae793cd6-e9ed-4a1e-b98e-b91342f509fa",
+      "name": "Magnafone",
+      "sale": 38,
+      "size": "0",
+      "total_price": 1819,
+      "nm_id": 28341,
+      "brand": "Lowery",
+      "status": 202
+    },
+    {
+      "chrt_id": 64623,
+      "track_number": "f75d4ca7-6da1-4ebc-931f-7325f331945b",
+      "price": 1768,
+      "rid": "8d28fcdc-1c4c-4954-ad10-19e91b591243",
+      "name": "Mangelica",
+      "sale": 24,
+      "size": "0",
+      "total_price": 1462,
+      "nm_id": 14165,
+      "brand": "Molly",
+      "status": 202
+    },
+    {
+      "chrt_id": 85008,
+      "track_number": "0e470f25-0431-47d4-b39b-793a1e8be192",
+      "price": 3984,
+      "rid": "9d8bc824-9fe9-4fd9-9339-91376c225fc7",
+      "name": "Minga",
+      "sale": 81,
+      "size": "0",
+      "total_price": 375,
+      "nm_id": 61184,
+      "brand": "Lora",
+      "status": 202
+    }
+  ],
+  "locale": "en",
+  "internal_signature": "",
+  "customer_id": "test",
+  "delivery_service": "meest",
+  "shardkey": "9",
+  "sm_id": 99,
+  "date_created": "1993-05-14T08:32:16",
+  "oof_shard": "1"
+}

@@ -1,0 +1,75 @@
+{
+  "order_uid": "63c6dfa0f7a4c84835981855",
+  "track_number": "1abbeb65-f2eb-4eff-8b53-e86e6ed28ca6",
+  "entry": "ZINCA",
+  "delivery": {
+    "name": "Holmes Oliver",
+    "phone": "+7 (863) 519-3525",
+    "zip": "2639809",
+    "city": "Dyckesville",
+    "address": "Woodruff Avenue",
+    "region": "Northern Mariana Islands",
+    "email": "holmesoliver@zinca.com"
+  },
+  "payment": {
+    "transaction": "63c6dfa0b9e09cc8e207fda6",
+    "request_id": "",
+    "currency": "USD",
+    "provider": "wbpay",
+    "amount": 2446,
+    "payment_dt": 23021,
+    "bank": "tropolis",
+    "delivery_cost": 1179,
+    "goods_total": 851,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 18161,
+      "track_number": "347c990c-2af1-4bc1-beb7-030bf222f2c4",
+      "price": 2689,
+      "rid": "6df0ad1f-d332-40c5-878d-de45f1945769",
+      "name": "Microluxe",
+      "sale": 42,
+      "size": "0",
+      "total_price": 2460,
+      "nm_id": 81778,
+      "brand": "Schmidt",
+      "status": 202
+    },
+    {
+      "chrt_id": 82146,
+      "track_number": "3e0ba4b8-4d47-4228-977f-26e676f1aadc",
+      "price": 2970,
+      "rid": "14d6ec54-07d6-42ea-b382-b5a6ae2741c7",
+      "name": "Menbrain",
+      "sale": 91,
+      "size": "0",
+      "total_price": 683,
+      "nm_id": 27113,
+      "brand": "Pratt",
+      "status": 202
+    },
+    {
+      "chrt_id": 31638,
+      "track_number": "f4878111-c8ae-425b-9947-620cc11c9509",
+      "price": 3592,
+      "rid": "f96fa3e7-6c1b-460e-8bbb-32a3c08cb0be",
+      "name": "Fangold",
+      "sale": 90,
+      "size": "0",
+      "total_price": 2856,
+      "nm_id": 32780,
+      "brand": "Brenda",
+      "status": 202
+    }
+  ],
+  "locale": "en",
+  "internal_signature": "",
+  "customer_id": "test",
+  "delivery_service": "meest",
+  "shardkey": "9",
+  "sm_id": 99,
+  "date_created": "1978-08-13T03:47:35",
+  "oof_shard": "1"
+}

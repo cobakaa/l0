@@ -1,0 +1,75 @@
+{
+  "order_uid": "63c6dfa0d7baeb6e4e41034d",
+  "track_number": "bf80522e-db88-465a-91a6-ba653a0a35cb",
+  "entry": "BIOLIVE",
+  "delivery": {
+    "name": "Bianca Estes",
+    "phone": "+7 (848) 561-3891",
+    "zip": "2639809",
+    "city": "Dunnavant",
+    "address": "Kensington Walk",
+    "region": "Massachusetts",
+    "email": "biancaestes@biolive.com"
+  },
+  "payment": {
+    "transaction": "63c6dfa0e93d19f95c3bf9f4",
+    "request_id": "",
+    "currency": "USD",
+    "provider": "wbpay",
+    "amount": 2191,
+    "payment_dt": 68389,
+    "bank": "bristo",
+    "delivery_cost": 1425,
+    "goods_total": 564,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 58164,
+      "track_number": "4b6b9616-b70b-4b3e-ae74-7f1f14c7eb8f",
+      "price": 2663,
+      "rid": "f30829c4-abc3-46de-9b0e-71eba1e9f142",
+      "name": "Krog",
+      "sale": 73,
+      "size": "0",
+      "total_price": 3890,
+      "nm_id": 27351,
+      "brand": "Charmaine",
+      "status": 202
+    },
+    {
+      "chrt_id": 36407,
+      "track_number": "a3204bed-5764-468c-9153-ce874c4a43e5",
+      "price": 2445,
+      "rid": "0fcaff38-fb45-427e-8895-667ce3162d98",
+      "name": "Solaren",
+      "sale": 77,
+      "size": "0",
+      "total_price": 2361,
+      "nm_id": 93861,
+      "brand": "Oneal",
+      "status": 202
+    },
+    {
+      "chrt_id": 12026,
+      "track_number": "a62c887c-4ff4-4055-b578-f525003a5893",
+      "price": 1534,
+      "rid": "21053078-162f-4654-be33-3fcb13e388b6",
+      "name": "Stockpost",
+      "sale": 97,
+      "size": "0",
+      "total_price": 3574,
+      "nm_id": 64025,
+      "brand": "Jocelyn",
+      "status": 202
+    }
+  ],
+  "locale": "en",
+  "internal_signature": "",
+  "customer_id": "test",
+  "delivery_service": "meest",
+  "shardkey": "9",
+  "sm_id": 99,
+  "date_created": "2000-08-18T11:48:11",
+  "oof_shard": "1"
+}
