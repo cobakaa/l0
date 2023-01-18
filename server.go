@@ -359,6 +359,35 @@ func (dbh *DbHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func (dbh *DbHandler) MsgHandler(m *stan.Msg) {
+	isCorrect := true
+	data, err := JsonToOrder(m.Data)
+	//m.Ack()
+	if err != nil {
+		fmt.Println("Model is incorrect")
+		return
+	}
+	ctx := context.Background()
+	tx, err := dbh.DB.BeginTx(ctx, nil)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	dbh.Tx = tx
+	orderId, err := dbh.CreateOrder(ctx, &data)
+	if err != nil {
+		isCorrect = false
+	}
+	err = tx.Commit()
+	if err != nil {
+		isCorrect = false
+	}
+	if !isCorrect {
+		fmt.Println("Model is incorrect")
+		return
+	}
+	fmt.Println("Order " + strconv.Itoa(orderId) + " added")
+}
+
 func main() {
 	sc, err := stan.Connect("test-cluster", "sub")
 	if err != nil {
@@ -386,34 +415,11 @@ func main() {
 		fmt.Println(err.Error())
 	}
 
-	sc.Subscribe("order", func(m *stan.Msg) {
-		isCorrect := true
-		data, err := JsonToOrder(m.Data)
-		//m.Ack()
-		if err != nil {
-			fmt.Println("Model is incorrect")
-			return
-		}
-		ctx := context.Background()
-		tx, err := dataBase.BeginTx(ctx, nil)
-		if err != nil {
-			fmt.Println(err.Error())
-		}
-		handler.Tx = tx
-		orderId, err := handler.CreateOrder(ctx, &data)
-		if err != nil {
-			isCorrect = false
-		}
-		err = tx.Commit()
-		if err != nil {
-			isCorrect = false
-		}
-		if !isCorrect {
-			fmt.Println("Model is incorrect")
-			return
-		}
-		fmt.Println("Order " + strconv.Itoa(orderId) + " added")
-	}, stan.DurableName("order"))
+	_, err = sc.Subscribe("order", handler.MsgHandler, stan.DurableName("order"))
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
 
 	http.Handle("/", handler)
 	fmt.Println("starting server at :8080")
